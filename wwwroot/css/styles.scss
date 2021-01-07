@@ -1,0 +1,269 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+$black-color: #000000;
+$white-color: #ffffff;
+$blue: #007bff;
+$border-gradient: linear-gradient(90deg, rgba(232, 241, 242, 1) 0%, rgba(27, 152, 224, 1) 25%, rgba(36, 123, 160, 1) 50%, rgba(0, 100, 148, 1) 75%, rgba(19, 41, 61, 1) 100%);
+$bg-gradient: linear-gradient(325deg, rgba(63, 193, 192, 1) 0%, rgba(0, 178, 202, 1) 25%, rgba(8, 153, 186, 1) 50%, rgba(26, 91, 146, 1) 75%, rgba(29, 78, 137, 1) 100%);
+$border-gradient2: linear-gradient(
+  325deg,
+  rgba(173, 215, 246, 1) 0%,
+  rgba(135, 191, 255, 1) 25%,
+  rgba(63, 142, 252, 1) 50%,
+  rgba(38, 103, 255, 1) 75%,
+  rgba(59, 40, 204, 1) 100%
+);
+$bg-gradient3: linear-gradient(
+  330deg,
+  rgba(174, 236, 239, 1) 0%,
+  rgba(128, 222, 217, 1) 25%,
+  rgba(109, 157, 197, 1) 50%,
+  rgba(17, 157, 164, 1) 75%,
+  rgba(48, 102, 190, 1) 100%
+);
+$border-rG: radial-gradient(circle, rgba(173, 215, 246, 1) 0%, rgba(135, 191, 255, 1) 25%, rgba(63, 142, 252, 1) 50%, rgba(38, 103, 255, 1) 75%, rgba(59, 40, 204, 1) 100%);
+$carousel1: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+$carousel2: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+$bg-gradient4: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0.35) 100%);
+
+.mt-10 {
+  margin-top: 1in;
+}
+header {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 100;
+  border-bottom: 5px solid;
+  border-image-source: $border-rG;
+  border-image-slice: 1;
+
+  .auto-text {
+    color: $black-color !important;
+  }
+
+  &.scrolled {
+    background-color: $white-color;
+  }
+
+  .navbar {
+    .container {
+      align-items: center;
+      display: flex;
+
+      .navbar-brand {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $white-color;
+
+        .logo {
+          height: 8vh;
+        }
+      }
+    }
+  }
+}
+
+.bg-gradient {
+  color: $white-color !important;
+  background-image: $bg-gradient !important;
+}
+.bg-gradient2 {
+  color: $white-color;
+  background-image: $border-gradient2 !important;
+}
+
+.no-margin {
+  padding-right: auto;
+  padding-left: auto;
+  margin-right: -8vw;
+  margin-left: -8vw;
+  .filter {
+    filter: brightness(0.5);
+  }
+
+  .indicator-l:hover {
+    transition: 0.5s;
+    background-image: $carousel2;
+  }
+  .indicator-r:hover {
+    transition: 0.5s;
+    background-image: $carousel1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .no-margin {
+    margin-top: 0in;
+  }
+}
+@media screen and (max-width: 768px) {
+  .no-margin {
+    margin-top: -1in;
+  }
+}
+@media screen and (max-width: 992px) {
+  .no-margin {
+    margin-top: -1in;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .no-margin {
+    margin-top: -1in;
+  }
+}
+
+/* Border Gradient Animation */
+.gradient-borderv1 {
+  --borderWidth: 10px;
+  background: #ffffff;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-borderv1:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(90deg, rgba(45, 216, 240, 1) 0%, rgba(44, 63, 224, 1) 100%);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+/* Border Gradient Animation */
+.gradient-borderv2 {
+  --borderWidth: 10px;
+  background: #ffffff;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-borderv2:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.backdrop-blur {
+  backdrop-filter: blur(1px) !important;
+  background-image: linear-gradient(90deg, rgba(0, 34, 68, 1) 0%, rgba(0, 34, 68, 0.5) 100%);
+  padding: 10px;
+  border-radius: 5px;
+  color: $white-color;
+  text-decoration: none !important;
+  text-decoration-color: $white-color;
+}
+
+.header-page {
+  background-image: url(../img/bg-image2.jpg) !important;
+  height: 5in;
+  width: 100%;
+  background-size: cover;
+  padding: 1in;
+  h1 {
+    font-size: 25vh;
+  }
+  h1:hover {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
+}
+.rounded-circle {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  border-radius: 50%;
+  align-items: center;
+  z-index: 50;
+  .resize {
+    height: 150px;
+    width: 150px;
+    color: white;
+    float: right;
+  }
+}
+
+//Homepage
+.banner {
+  width: 100vw;
+  height: 75vh;
+  //Homepage Greetings
+  .Div {
+    .col-sm-12 {
+      position: relative;
+      margin-top: -265px;
+      margin-left: 44%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 250px;
+      .centered {
+        //Welcome to WeAid (Text)
+        position: relative;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        filter: brightness(99%);
+        text-shadow: 1px 1px 2px black;
+      }
+      .tagline {
+        //We care, WeAid (Text)
+        position: relative;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 200px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        filter: brightness(95%);
+        text-shadow: 1px 1px 2px black;
+      }
+    }
+  }
+}
+
+.icon {
+  height: 10vh;
+  width: 10vh;
+}
+
+.fixed-size {
+  height: 50vh;
+}
+.image {
+  height: 25rem;
+  z-index: -5;
+}
+.bg {
+  background: $bg-gradient4;
+  border-radius: 10px;
+  z-index: -5;
+}
+
+.row {
+  .col {
+    max-height: 350px;
+  }
+}
