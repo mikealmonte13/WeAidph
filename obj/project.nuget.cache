@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4NrfiJX7QwgHMyRzBjSwNwx3HXfsSO/n+4Cw3Bmmc7hyMy/1hilutP5b0/T4iNaHibRibB5U1hVAWjkrSB/YFA==",
+  "dgSpecHash": "jxtXsjdmo+lrEjscDh+NMzw4S89h/bjR0L/nLFQBP0gZJOohtGq3l5Ly62FZxVRObfk/6eodocD47lh1dEsOlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\WeAid.csproj",
+  "projectFilePath": "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\WeAid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mike Almonte\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.10\\microsoft.aspnetcore.authentication.google.3.1.10.nupkg.sha512",
     "C:\\Users\\Mike Almonte\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\3.1.10\\microsoft.aspnetcore.authentication.microsoftaccount.3.1.10.nupkg.sha512",

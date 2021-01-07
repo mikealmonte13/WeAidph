@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\WeAid.csproj": {}
+    "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\WeAid.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\WeAid.csproj": {
+    "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\WeAid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\WeAid.csproj",
+        "projectUniqueName": "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\WeAid.csproj",
         "projectName": "WeAid",
-        "projectPath": "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\WeAid.csproj",
+        "projectPath": "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\WeAid.csproj",
         "packagesPath": "C:\\Users\\Mike Almonte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike Almonte\\Downloads\\WeAid\\obj\\",
+        "outputPath": "C:\\Users\\Mike Almonte\\Documents\\JScript Files\\WeAid\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mike Almonte\\AppData\\Roaming\\NuGet\\NuGet.Config",
